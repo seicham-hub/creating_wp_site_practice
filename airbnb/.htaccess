@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Airbnbdemo"
-AuthUserFile "/home/c6650293/public_html/chami.conohawing.com/.htpasswd"
+AuthUserFile "/portfolio/airbnb/.htpasswd"
 require valid-user
