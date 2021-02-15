@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Airbnbdemo"
-AuthUserFile "/portfolio/airbnb/.htpasswd"
-require valid-user
