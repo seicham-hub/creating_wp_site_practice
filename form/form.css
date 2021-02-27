@@ -1,0 +1,358 @@
+body{
+	overflow-x:hidden;
+	color:#454545;
+}
+
+.ErrMessage{
+	color:red;
+	margin-bottom:10px;
+}
+
+header{
+	background-color:#f0f0f0;
+	height:138.67px;
+	
+
+}
+.qlead-logo{
+	width:200px;
+	margin:30px 0 0 30px;
+
+}
+
+h1{
+	margin-bottom:20px;
+}
+
+nav{
+	margin:5% 0;
+}
+
+.breadcrumbs{
+	display:flex;
+	padding:0;
+}
+.breadcrumbs li{
+list-style:none;
+}
+
+.breadcrumbs li::after{
+  content: '>';
+  display: inline-block;
+  padding: 0 10px; /*左右に余白*/
+}
+
+.breadcrumbs li:last-child::after{
+  display: none;
+}
+
+
+
+/***************main***********************/
+
+
+
+.m-wrap{
+	
+	background-color:#FDF8E9;
+	border:2px solid #F5F5F5;
+	border-radius:15px;
+}
+
+/*common*/
+
+.input-wrap{
+	display:flex;
+	border-bottom:1px solid #D7D7D7;
+}
+
+.input-wrap:last-child{
+	border:none;
+}
+
+.in-label{
+	width:300px;
+	height:70px;
+	display:flex;
+}
+
+.in-l-5{
+	height:120px;
+}
+
+.in-label label{
+	
+	font-weight:bold;
+	margin:auto 30px auto 30px;
+}
+
+input{
+display:inline-block;
+outline:none;
+
+}
+
+.nyuryoku{
+	width:100%;
+	height:auto;
+	margin-top:23px;
+}
+
+.nyuryoku5{
+
+	margin:auto 0;
+}
+
+
+
+
+/******/
+
+.nyuryoku1 input{
+	margin-left:20px;
+}
+
+.nyuryoku1 input:first-child{
+	margin:0;
+}
+
+textarea{
+	resize:none;
+	outline:none;
+	width:60%;
+	height:80px;
+	overflow-y:auto;
+	
+}
+
+.nyuryoku-last input{
+	width:250px;
+}
+
+.sosin{
+	padding:40px 0;
+	display:flex;
+}
+
+.sosin input{
+	font-weight:bold;
+	font-size:25px;
+	letter-spacing:0.05em;
+	margin:0 auto;
+	width:350px;
+	height:70px;
+	border-radius:5px;
+	background-color:#F8BF0D;
+	border:1px solid #B4B4B4;
+	border-bottom:none;
+	box-shadow:0 7px #735803;
+
+
+	
+}
+
+.sosin input:hover{
+	opacity:0.7;
+	box-shadow:none;
+	position:relative;
+	top:7px;
+	
+	
+
+}
+
+@media screen and (max-width:767px){
+
+	.input-wrap{
+		display:block;
+		text-align: center;
+	}
+	.in-label {
+		margin:auto;
+		
+	}
+	.in-label label{
+		margin:auto;
+	}
+
+	
+	.nyuryoku{
+		margin:12px auto 50px;
+	}
+	textarea{
+	height:150px;
+	width:80%;
+	}
+	.nyuryoku-name input{
+		width:30%;
+	}
+	.nyuryoku-name input:first-child{
+		margin-right:20px;
+	}
+	.nyuryoku-last input{
+		width:50%;
+	}
+
+}
+
+
+/********************footer************************/
+
+
+.footer{
+ border-top:1px solid rgb(221, 221, 221);
+ background-color:#FFEFC1;
+ font-size:16px;
+ display:flex;
+ padding:70px 10%;
+
+}
+
+
+
+.footer li{
+list-style:none;
+margin-top:10px;
+}
+
+
+
+.footer a{
+ color:#5D5F5F;
+ display:inline-block;
+}
+
+.footer a>object{
+	pointer-events:none;
+}
+
+.sns-icon{
+	display:flex;
+	margin-top:40px;
+	padding-left:40px;
+}
+
+.snss2{
+	margin-left:20px;
+}
+
+@media screen and (max-width:767px){
+	.footer{
+	 padding:70px 6%;
+	}
+	.footer ul{
+		padding:0;
+	}
+	.sns-icon{
+		padding:0;
+	}
+}
+
+
+
+
+
+/*****************confirm.php********************/
+
+.m-wrap2{
+	margin-top:5%;
+	background-color:#FDF8E9;
+	border:2px solid #F5F5F5;
+
+}
+
+.sosin-w{
+	display:flex;
+	
+}
+
+.sosin-confirm{
+	margin:0 auto;
+	display:flex;
+	width:80%;
+	justify-content:center;
+}
+
+.sosin-confirm input{
+width:35%;
+
+}
+
+.sosin-confirm input:first-child{
+	margin:0 40px 0 0;
+	background-color:#F5F5F5;
+	box-shadow:0 7px #2A2A2A;
+}
+
+
+
+.sosin-confirm input:hover{
+	opacity:0.7;
+	box-shadow:none;
+	position:relative;
+	top:7px;
+	}
+
+
+
+
+@media screen and (max-width:991px){
+	.sosin-confirm input{
+		font-size:20px;
+		width:300px;
+		height:65px;
+	}
+
+}
+@media screen and (max-width:767px){
+	.sosin-confirm{
+		display:block;
+		text-align:center;
+	}
+
+	.sosin-confirm input:first-child{
+		margin:0 0 30px 0;
+	}
+
+
+}
+
+
+/*********thanks****************/
+
+.c-thanks{
+	height:550px;
+}
+
+.finish{
+	padding:30px 0;
+}
+
+.main-wrap-thanks{
+	padding-right:30%;
+}
+
+
+@media screen and (max-width:767px){
+	header{
+		height:auto;
+	}
+	.qlead-logo{
+	width:150px;
+	margin:20px auto;
+	}
+	h1{
+		font-size:30px;
+	}
+}
+@media screen and (max-width:576px){
+	.c-thanks{
+		padding-left:7%;
+		height:700px;
+	}
+	.sosin-thanks input{
+		font-size:20px;
+	}
+}
+	
+
