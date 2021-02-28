@@ -1,21 +1,6 @@
 <?php 
 session_start();
 
-/*$error = [];
-
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
-	//フォームの送信時にエラーをチェックする
-
-	$post = filter_input_array(INPUT_POST,$_POST);//FILTER_SANITIE_STRING);
-
-	if($post['name'] === ''){
-		$error['name'] = 'blank';
-	}
-
-}
-*/
-
-
 
 $nyuryokuErr=$nameErr1=$nameErr2=$mailErr="";
 $mailErr2=$gradeErr="";
@@ -29,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" ){
 	// フォームの値を配列に入れる。特殊文字を除去する。
 	$post = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
 
+	// 今回は普通にエスケープしているが、関数定義でエスケープしても良い
 	/*function test_input($data){
 		$data = trim($data);//余分なスペース、タブ、改行を取り除く
 		$data = stripslashes($data);//バックスラッシュを削除
@@ -136,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" ){
 
 	<div class="m-wrap">
 
-<!-- 	<,>,&などの特殊文字をhtmlエンティティに変換-->		
+<!-- 	<,>,&などの特殊文字をhtmlエンティティに変換/$_SERVER関数はクロスサイトスクリプティングの危険-->		
 	
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"], ENT_QUOTES , 'UTF-8');?>" method="post" >
 			
